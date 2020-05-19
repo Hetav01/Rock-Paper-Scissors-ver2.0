@@ -1,0 +1,265 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-image: linear-gradient(to right, #13547a, #80d0c7);
+    font-family: 'Pangolin', cursive;
+}
+
+.score
+{
+    color: white;
+    display: flex;
+    height: 20vh;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.playerNum, .computerNum
+{
+    text-align: center;
+    padding: 10px;
+    font-size: 1.6rem;
+}
+
+.intro {
+  color: white;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  transition: all 0.5s ease
+}
+
+.intro h1
+{
+    font-size: 3rem;
+}
+
+.intro button
+{
+    border: none;
+    width: 150px;
+    height: 50px;
+    background: none;
+    color: white;
+    font-size: 1.2rem;
+    background: rgb(110, 175, 110);
+    border-radius: 7px 7px 7px 7px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.match button
+{
+    border: none;
+    width: 150px;
+    height: 50px;
+    background: none;
+    color: white;
+    font-size: 1.2rem;
+    background: rgb(110, 175, 110);
+    border-radius: 7px 7px 7px 7px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.resetButton
+{
+    text-align: center;
+}
+
+.resetButton button
+{
+    align-items: center;
+    border: none;
+    width: 100px;
+    height: 25px;
+    background: none;
+    color: white;
+    font-size: 1.2rem;
+    background: rgb(110, 175, 110);
+    border-radius: 7px 7px 7px 7px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.intro button:hover
+{
+    color: white;
+    background: rgb(100, 158, 105);
+    outline: none;
+}
+
+.match button:hover
+{
+    color: white;
+    background: rgb(100, 158, 105);
+    outline: none;
+}
+
+.match
+{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease 0.5s;
+}
+
+.winner
+{
+    color: white;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.hands, .options
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.playerHand
+{
+    transform: rotateY(180deg);
+}
+
+div.fadeOut
+{
+    pointer-events: none;
+    opacity: 0;
+}
+
+div.fadeIn
+{
+    pointer-events: all;
+    opacity: 1;
+}
+
+@keyframes shakey
+{
+    0%
+    {
+        transform: rotateY(180deg) translateY(0px);
+    }
+
+    25%
+    {
+        transform: rotateY(180deg) translateY(-50px);
+    }
+
+    50%
+    {
+        transform: rotateY(180deg) translateY(0px);
+    }
+
+    75%
+    {
+        transform: rotateY(180deg) translateY(-50px);
+    }
+
+    100%
+    {
+        transform: rotateY(180deg) translateY(0px);
+    }
+}
+
+@keyframes shakeyComp
+{
+    0%
+    {
+        transform: translateY(0px);
+    }
+
+    25%
+    {
+        transform: translateY(-50px);
+    }
+
+    50%
+    {
+        transform: translateY(0px);
+    }
+
+    75%
+    {
+        transform: translateY(-50px);
+    }
+
+    100%
+    {
+        transform: translateY(0px);
+    }
+}
+
+.logo
+{
+    width: 180px;
+    height: 70px;
+    cursor: pointer;
+}
+
+.credits
+{   margin-bottom: 0;
+    margin-top: 100px;
+    text-align: center;
+    font-family: 'Dosis', sans-serif; 
+}
+
+.name
+{
+    font-family: 'Dosis', sans-serif; 
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+select
+{   
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    outline: none;
+    appearance: none;
+}
+
+.select
+{
+    margin: 1rem;
+    position: relative;
+    overflow: hidden; /*covers any overflow from if the style is bigger than the parent element*/
+}
+
+select
+{
+    color: rgb(110, 175, 110);;
+    padding: 10px;
+    text-align: center; 
+    cursor: pointer;
+    width: 8rem;
+} 
+
+.select::after 
+{
+  content: "\25BC";
+  position: absolute;
+  padding: 10px;
+  background: rgb(110, 175, 110);;
+  top: 0;
+  right: 0;
+  pointer-events: none;
+  transition: all 500ms ease;
+}
+
+.select:hover::after
+{
+    color: black;
+    background: rgb(110, 175, 110);;
+}

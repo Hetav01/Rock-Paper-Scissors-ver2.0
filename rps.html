@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="icon" href="document.ico">
+    <link rel="stylesheet" href="rps.css">  
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+</head>
+<body>
+        <section class="game">
+            <div class="score">
+            <div class="playerScore">
+                <h2>
+                    Player 
+                </h2>
+                <div class="playerNum">
+                    0
+                </div>
+            </div>
+            <div class="computerScore">
+                <h2>
+                    Computer
+                </h2>
+                <div class="computerNum">
+                    0
+                </div>
+            </div>
+            </div>
+            <div class="intro">
+                <h1>Rock Paper Scissors!!</h1>
+                   <div class="select"> 
+                       <select name="number" class="selectNumber">
+                        <option value="one" class="one">1</option>
+                        <option value="three" class="three">3</option>
+                        <option value="five" class="five">5</option>
+                       </select>
+                    </div>
+                <button class="playButton">Let's Play!</button>
+            </div>
+            <div class="match fadeOut">
+                <h2 class="winner">Choose an Option</h2>
+                <div class="hands">
+                    <img class="playerHand" src="./assets/rock.png" alt="rock">
+                    <img class="computerHand" src="./assets/rock.png" alt="rock">
+                </div>
+                <div class="options">
+                    <button class="rock">rock</button>
+                    <button class="paper">paper</button>
+                    <button class="scissors">scissors</button>
+                </div>
+            </div>
+        <div class="resetButton">
+            <button>Reset</button>
+        </div>
+        </section>
+        <div class="credits">
+            <div class="creditscompany">
+                Powered by
+            </div>
+            <a href="https://github.com/Hetav01?tab=repositories">
+                <img src="./assets/github.png" alt="Github" class="logo">
+            </a>
+        </div>
+        <div class="name">Developed by Hetav Patel</div>
+    <script src="rps.js"></script>
+</body>
+</html>
