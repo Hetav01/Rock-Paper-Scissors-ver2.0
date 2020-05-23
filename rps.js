@@ -15,11 +15,11 @@ const game = () => /*new method of coding...reduces the code substaintially and 
         const optionSelect = document.querySelector(".selectNumber");
 
         // P: get number of matches to play
-        bestOf = parseInt(optionSelect.options[optionSelect.selectedIndex].text);
 
         playButton.addEventListener("click", function () {
             introScreen.classList.add("fadeOut");
             matchScreen.classList.add("fadeIn");
+            bestOf = parseInt(optionSelect.options[optionSelect.selectedIndex].text);
         });
     }
 
@@ -72,7 +72,7 @@ const game = () => /*new method of coding...reduces the code substaintially and 
 
         // P: check if total matches == best of 
         if (total >= bestOf) {
-            console.log('number of matches has ended. show some other screen with final result');
+            console.log(total, bestOf, 'number of matches has ended. show some other screen with final result');
             // number of matches has ended. show some other screen with final result
         }
     }
